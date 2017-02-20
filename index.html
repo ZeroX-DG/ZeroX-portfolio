@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hung Nguyen | a website developer</title>
+    <!--Meta-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <!--Link & Script-->
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Pacifico|Open+Sans|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Hung Nguyen</h1>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#progress">Progress</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="first_section" id="hi">
+            <img src="img/ZeroX.jpg" alt="" class="my_face" />
+            <h1>Hi I'm Hung Nguyen</h1>
+            <h3>A website developer</h3>
+        </section>
+        <section class="second_section" id="about">
+            <section class="left">
+                <span class="title">About me</span><br><br><br><br><br>
+                <p>Hi, my name is Nguyen Viet Hung, I'm a website developer from Viet Nam</p>
+                <p>I started to learn making website with basic html, css and js when I was 12, now I'm 16 and</p>
+                <p>still learning about php frameworks, js libraries and a little bit photoshop. Beside making</p>
+                <p>website, I also tried myself to make software, and get six pack =)</p>
+                <p>Now I'm currently studying software engineering at FPT APTECH. </p>
+            </section>
+            <section class="right">
+                <div class="box">
+                    <img src="img/coding.png"/>
+                    <span>Favorite activity</span>
+                </div>
+                <div class="box">
+                    <img src="img/chicken.png"/>
+                    <span>Favorite food</span>
+                </div>
+                <div class="box">
+                    <img src="img/birthday.png"/>
+                    <span>Favorite day</span>
+                </div>
+                <div class="box">
+                    <img src="img/music.png"/>
+                    <span>Another favorite activity</span>
+                </div>
+                <div class="box">
+                    <img src="img/bike.png"/>
+                    <span>Favorite transportation</span>
+                </div>
+                <div class="box">
+                    <img src="img/camera.png"/>
+                    <span>Next favorite activity</span>
+                </div>
+            </section>
+        </section>
+        <section class="third_section" id="works">
+            <span class="title" style="float: right; margin: 30px;">Works</span><br><br><br>
+            <div class="black-background">
+                <div class="left"><div class="img"><img src="" /></div></div>
+                <div class="right">
+                    <div class="close-btn" onclick="closeWork()"><i class="fa fa-times" aria-hidden="true"></i></div>
+                    <div class="text"></div>
+                </div>
+            </div>
+            <ul>
+                <li description="This is a desktop music app written in C#. I was bored then I tried to figure out how wmplib works so I right after I know how it works, I started to make that app. That's how Mesly was born after 2 days of coding =)"><img src="img/proj_Mesly.jpg"></li>
+                <li description="This javascript library was made when I was lazy to find push notification library. I decided to make this library and surprisingly it took me only 6 hours to complete the first version of it !"><img src="img/proj_NoticeZ.jpg"></li>
+                <li description="This was just a simple design that I made at midnight (my mom wasn't happy about that)<br>Take a look: http://codepen.io/ZeroX-DG/pen/KaXqEZ"><img src="img/proj_CodeEditor.jpg"></li>
+                <li description="No FutureCafe doesn't exist don't look for it =) It was just my school project, but for me it was more than that ! that project was the first project that I made with my team at school, sometime there are some serious bugs but we still able to fix it and we pretty proud of it =)" class="hide"><img src="img/proj_FutureCafe.jpg"></li>
+                <li description="Another library ! but this time it was written in python =) Sometime I wanted to add some cool effect when displaying my code (in python of course) so I made that library =)<br>Open source: https://github.com/ZeroX-DG/Animate.py" class="hide"><img src="img/proj_animatepy.jpg"></li>
+            </ul>
+            <a onclick="expand()" style="cursor: pointer" id="open">View some of my works</a>
+            <a onclick="shrink()" style="cursor: pointer; left: 20px;  margin-top: 50px; float: left; display: none" id="close">Hide some of my works</a>
+        </section>
+        <section class="fourth_section" id="progress">
+            <span class="title">Progress</span><br><br><br>
+            <div class="timeline">
+                <span class="dot"></span>
+                <span class="line"></span>
+                <ul>
+                    <li>
+                        <span class="time">October 5, 2001</span>
+                        <div class="box left">
+                            <div class="btitle">First time saw the light !</div>
+                            <div class="content">
+                                I was born in October 5, 2001 at Ho Chi Minh city, Viet Nam. That's right ! I'm a Libra =)
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li>
+                        <span class="time">October 10, 2016</span>
+                        <div class="box left">
+                            <div class="btitle">Graduated secondary school</div>
+                            <div class="content">
+                                I graduated from Nguyen An Ninh secondary school in 2016. After 4 years of study, I've finally got out from that school and study what I like.
+                            </div>
+                        </div>
+                        
+                    </li>
+                    <li>
+                       <span class="time">August 9, 2016</span>
+                        <div class="box left">
+                            <div class="btitle">Went to FPT APTECH school</div>
+                            <div class="content">
+                                After graduated secondary school, I was completed the exam to FPT APTECH successfully and started to study there in August 9, 2016.
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <span class="lastDot"></span>
+            </div>
+        </section>
+        <section class="fifth_section" id="contact">
+            <span class="title" style="float: right; margin: 30px;">Contact me</span><br><br><br>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/ZeroXCEH" target="_blank">
+                        <div class="circle" id="facebook">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCIK6YpvnL7wG5eNjEqAudwA" target="_blank">
+                        <div class="circle" id="youtube">                       
+                            <i class="fa fa-youtube" aria-hidden="true"></i>     
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://codepen.io/ZeroX-DG/" target="_blank">
+                        <div class="circle" id="codepen">                       
+                            <i class="fa fa-codepen" aria-hidden="true"></i>           
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/ZeroX-DG" target="_blank">
+                        <div class="circle" id="github">    
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:hunggarena12@gmail.com" target="_blank">
+                        <div class="circle" id="email">
+                            <i class="fa fa-envelope-open" aria-hidden="true"></i>        
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </section> 
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
