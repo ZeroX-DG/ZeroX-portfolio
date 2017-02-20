@@ -78,6 +78,7 @@ function isInView(elem)
 }
 var g;
 function openWork(e){
+    $(".black-background").fadeIn();
     $(".black-background").css("display", "flex");
     var text = e.attr("description");
     var img  = e.children()[0].src;
@@ -86,8 +87,9 @@ function openWork(e){
 }
 
 function closeWork(){
-    $(".black-background").css("display", "none");
-    $(".black-background .text").html(''); //clear for sure (dont have to but... you get the point)
+    $(".black-background").fadeOut(function(){
+        $(".black-background .text").html(''); //clear for sure (dont have to but... you get the point)
+    });
 }
 
 $("#works li").click(function(){
