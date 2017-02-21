@@ -462,11 +462,76 @@ header{
 		}
 	}
 }
+
+.fifth_section{
+    width: 100%;
+    min-height: 80vh;
+    background-color: #3D82FC;
+    color :white;
+    .title::before{
+		background-color: white;
+		height: 3px;
+	}
+    .chart{
+        width: 100%;
+        height: 100%;
+        //position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        ul{
+            width: 80%;
+            li{
+                width: 100%;
+                height: 30px;
+                border-radius: 3px;
+                background: lighten(#3D82FC, 10%);
+                margin-top: 30px;
+                .inner{
+                    width: 15%;
+                    height: 100%;
+                    border-radius: 3px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    padding-right: 20px;
+                    box-sizing: border-box;
+                    font-family: "Open Sans", sans-serif;   
+                }
+                #html{
+                    background: darken(orange, 2%);
+                }
+                #css{
+                    background: $fRed;
+                }
+                #js{
+                    background: $fLime;
+                }
+                #php{
+                    background: $fPurple;
+                }
+                #java{
+                    background: $fOrange;
+                }
+                #c{
+                    background: $fBlack;
+                }
+                #python{
+                    background: $fWhite;
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+
+
 @mixin hover($color){
     color: $color;
     border: 2px solid $color;
 }
-.fifth_section{
+.sixth_section{
 	width: 100%;
 	min-height: 100vh;
 	background-color:#8437fc;
@@ -475,13 +540,15 @@ header{
 	background:-moz-linear-gradient(#62eacf,#8437fc),#8437fc;background:-webkit-linear-gradient(#62eacf,#8437fc),#8437fc;
 	background:linear-gradient(#62eacf,#8437fc),#8437fc;
 	color: $fBlack;
+    padding: 20px;
+    box-sizing: border-box;
 	.title::before{
 		background-color: $fBlack;
 		height: 3px;
 	}
     ul{
         width: 100%;
-        margin-top: 20%;
+        margin-top: 15%;
         display: flex;
         justify-content: center;
         li{
